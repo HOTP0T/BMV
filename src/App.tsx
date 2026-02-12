@@ -496,6 +496,11 @@ const ConfirmationStage: React.FC<ConfirmationStageProps> = ({ content }) => {
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         <div className="photo-inner">
+          <img
+            src={`${import.meta.env.BASE_URL}MMs.jpg`}
+            alt="Us together"
+            className="photo-img"
+          />
           <div className="photo-overlay">
             A space for us 💕
             <div className="photo-hint">
