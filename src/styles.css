@@ -56,6 +56,33 @@ body {
   pointer-events: auto;
 }
 
+/* Mobile: allow scrolling inside the main card */
+@media (max-width: 767px) {
+  .card-surface {
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .card-surface::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .card-surface::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .card-surface::-webkit-scrollbar-thumb {
+    background: rgba(255, 192, 203, 0.55);
+    border-radius: 999px;
+  }
+
+  .card-surface {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 192, 203, 0.7) transparent;
+  }
+}
+
 @media (min-width: 768px) {
   .card-surface {
     padding: 2.75rem 3rem 3.25rem;
