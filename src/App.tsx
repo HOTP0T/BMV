@@ -501,12 +501,7 @@ const ConfirmationStage: React.FC<ConfirmationStageProps> = ({ content }) => {
             alt="Us together"
             className="photo-img"
           />
-          <div className="photo-overlay">
-            A space for us 💕
-            <div className="photo-hint">
-              Replace this with your favorite picture together.
-            </div>
-          </div>
+          <div className="photo-overlay" />
         </div>
       </motion.div>
     </div>
