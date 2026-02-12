@@ -1,0 +1,58 @@
+{
+  "question": {
+    "title": "Will you be my Valentine?",
+    "subtitle": "Dear Mimi..."
+  },
+  "buttons": {
+    "yes": "Yes ❤️",
+    "no": "No 🙈"
+  },
+  "escalationMessages": [
+    "Are you sure? 🥺",
+    "That feels like the wrong answer.",
+    "Think again… gently 😌",
+    "Hmm. Suspicious choice.",
+    "This button is getting shy.",
+    "It’s not cooperating, weird.",
+    "Nope—try again 😇",
+    "I admire the confidence.",
+    "Okay but… why though?",
+    "Your finger is determined.",
+    "This is turning into a sport.",
+    "I’m still waiting for “Yes”.",
+    "Be honest… you want to click it.",
+    "Plot twist: the right answer is still Yes.",
+    "Somewhere, the Yes button is giggling.",
+    "You’re very persistent for someone who is definitely saying Yes.",
+    "Tiny secret: this No button never worked anyway.",
+    "At this point, even the computer is blushing.",
+    "Careful, too many Nos may auto-convert to a giant YES.",
+    "I asked the universe. It voted ‘Yes’ unanimously.",
+    "Statistically speaking, this is 100% a Yes moment."
+  ],
+  "loader": {
+    "title": "Checking compatibility...",
+    "steps": [
+      "Analyzing personality...",
+      "Matching humor...",
+      "Verifying cuteness...",
+      "Running final calculation..."
+    ],
+    "result": "Compatibility: 100% ❤️"
+  },
+  "confirmation": {
+    "title": "Yay ❤️",
+    "subtitle": "You just made me the happiest person.",
+    "finalMessage": "Can't wait to eat your face"
+  },
+  "dateDetails": {
+    "targetDate": "2026-02-14T19:30:00",
+    "location": "📍 Unknown Location",
+    "note": "MUAMUA"
+  },
+  "afterCountdown": {
+    "title": "Time for our date!",
+    "subtitle": "Ps: It's ok if you're late 😉"
+  }
+}
+
