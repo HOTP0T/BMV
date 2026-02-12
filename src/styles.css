@@ -55,6 +55,30 @@ body {
   pointer-events: auto;
 }
 
+/* Mobile: scroll only the confirmation card */
+@media (max-width: 767px) {
+  .card-surface-scroll {
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 192, 203, 0.7) transparent;
+  }
+
+  .card-surface-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .card-surface-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .card-surface-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 192, 203, 0.55);
+    border-radius: 999px;
+  }
+}
+
 @media (min-width: 768px) {
   .card-surface {
     padding: 2.75rem 3rem 3.25rem;
@@ -218,32 +242,6 @@ body {
   gap: 1.6rem;
 }
 
-/* Mobile: scroll only the countdown screen content */
-@media (max-width: 767px) {
-  .confirmation-layout {
-    max-height: calc(100vh - 3rem);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .confirmation-layout::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .confirmation-layout::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .confirmation-layout::-webkit-scrollbar-thumb {
-    background: rgba(255, 192, 203, 0.55);
-    border-radius: 999px;
-  }
-
-  .confirmation-layout {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 192, 203, 0.7) transparent;
-  }
-}
 
 @media (min-width: 840px) {
   .confirmation-layout {
