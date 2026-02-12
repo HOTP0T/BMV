@@ -454,19 +454,31 @@ const ConfirmationStage: React.FC<ConfirmationStageProps> = ({ content }) => {
               <div className="countdown-grid">
                 <div className="countdown-cell">
                   <div className="countdown-value">{days}</div>
-                  <div className="countdown-label">Days</div>
+                  <div className="countdown-label">
+                    <span className="countdown-label-full">Days</span>
+                    <span className="countdown-label-short">D</span>
+                  </div>
                 </div>
                 <div className="countdown-cell">
                   <div className="countdown-value">{hours}</div>
-                  <div className="countdown-label">Hours</div>
+                  <div className="countdown-label">
+                    <span className="countdown-label-full">Hours</span>
+                    <span className="countdown-label-short">H</span>
+                  </div>
                 </div>
                 <div className="countdown-cell">
                   <div className="countdown-value">{minutes}</div>
-                  <div className="countdown-label">Minutes</div>
+                  <div className="countdown-label">
+                    <span className="countdown-label-full">Minutes</span>
+                    <span className="countdown-label-short">M</span>
+                  </div>
                 </div>
                 <div className="countdown-cell">
                   <div className="countdown-value">{secs}</div>
-                  <div className="countdown-label">Seconds</div>
+                  <div className="countdown-label">
+                    <span className="countdown-label-full">Seconds</span>
+                    <span className="countdown-label-short">S</span>
+                  </div>
                 </div>
               </div>
               {ended && (
