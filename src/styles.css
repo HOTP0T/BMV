@@ -24,9 +24,8 @@ body {
 .app-root {
   position: relative;
   width: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 100%;
+  overflow: hidden;
   color: inherit;
 }
 
@@ -41,7 +40,7 @@ body {
   pointer-events: none;
 }
 
-.card-surface {
+ .card-surface {
   max-width: 720px;
   width: 100%;
   background: radial-gradient(circle at 10% -20%, rgba(255, 192, 203, 0.22), transparent 55%),
@@ -54,33 +53,6 @@ body {
     0 0 0 1px rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(22px);
   pointer-events: auto;
-}
-
-/* Mobile: allow scrolling inside the main card */
-@media (max-width: 767px) {
-  .card-surface {
-    max-height: calc(100vh - 3rem);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .card-surface::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .card-surface::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .card-surface::-webkit-scrollbar-thumb {
-    background: rgba(255, 192, 203, 0.55);
-    border-radius: 999px;
-  }
-
-  .card-surface {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 192, 203, 0.7) transparent;
-  }
 }
 
 @media (min-width: 768px) {
@@ -244,6 +216,33 @@ body {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr);
   gap: 1.6rem;
+}
+
+/* Mobile: scroll only the countdown screen content */
+@media (max-width: 767px) {
+  .confirmation-layout {
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .confirmation-layout::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .confirmation-layout::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .confirmation-layout::-webkit-scrollbar-thumb {
+    background: rgba(255, 192, 203, 0.55);
+    border-radius: 999px;
+  }
+
+  .confirmation-layout {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 192, 203, 0.7) transparent;
+  }
 }
 
 @media (min-width: 840px) {
